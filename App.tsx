@@ -1,11 +1,12 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import ApiCall from './src/screens/ApiCall';
+import DataHolder from './src/screens/components/DataHolder';
 
 const App = () => {
   return (
-    <View>
-      <Text>Hello</Text>
-    </View>
+    <ApiCall></ApiCall>
+    
   );
 };
 
