@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import {StyleSheet, Text, View, TouchableOpacity, FlatList} from 'react-native';
 import axios from 'axios';
-import DataHolder from './components/DataHolder';
+import DataHolder from '../components/DataHolder';
 // let datalist:Object[] = []
 const ApiCall = () => {
   const [datalist,setdatalist] = useState([])
