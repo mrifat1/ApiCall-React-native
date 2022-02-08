@@ -19,13 +19,16 @@ const DataHolder = ({id,name,username,email}:datas) => {
 };
 
 const styles = StyleSheet.create({
-    containerStyle: {
-        margin: 10,
-        backgroundColor: 'green',
-        padding: 10,
-        alignItems: 'center',
-      },
-      itemStyle: {fontSize: 25}, 
+containerStyle: {
+    margin: 10,
+    backgroundColor: 'green',
+    padding: 10,
+    alignItems: 'center',
+    },
+    itemStyle: 
+    {
+        fontSize: 25
+    }, 
 });
 
 export default DataHolder;

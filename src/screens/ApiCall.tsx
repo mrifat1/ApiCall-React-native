@@ -2,18 +2,16 @@ import React, {useState,useEffect} from 'react';
 import {StyleSheet, Text, View, TouchableOpacity, FlatList} from 'react-native';
 import axios from 'axios';
 import DataHolder from './components/DataHolder';
-
+// let datalist:Object[] = []
 const ApiCall = () => {
   const [datalist,setdatalist] = useState([])
-  const callApi = ()=>{
+  const fetchData = ()=>{
     axios.get('https://jsonplaceholder.typicode.com/users')
     .then(function(response){
     // alert(JSON.stringify(response.data))
+    // datalist=response.data
     setdatalist(response.data)
-    alert(response.data)
-  })
-  .catch(function(error){
-    alert(error)
+    alert(JSON.stringify(datalist))
   })
   };
 
@@ -30,28 +28,26 @@ const ApiCall = () => {
   
   return (
     <View style={styles.container}>
-    {datalist.length!=0?(
+    
     <FlatList
     data={datalist}
     keyExtractor={(item,index)=> 'item' + index}
     renderItem={renderItem}
     showsVerticalScrollIndicator={false}
-    ></FlatList>):null}
-
-    <TouchableOpacity onPress={()=> callApi()}>
+    ></FlatList>
+    
+    {/* <TouchableOpacity onPress={()=> fetchData()}>
       <Text>Hello</Text>
-    </TouchableOpacity>
-      
-       
+    </TouchableOpacity> */} 
     </View>
   );
 };
 
 const styles = StyleSheet.create({
     container:{
-      flex:1,
-      alignItems:'center',
-      justifyContent:'center',
+      // flex:1,
+      // alignItems:'center',
+      // justifyContent:'center',
     },
 });
 
