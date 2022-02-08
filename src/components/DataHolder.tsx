@@ -9,23 +9,23 @@ type datas = {
 };
 const DataHolder = ({id,name,username,email}:datas) => {
   return (
-    <View style={styles.containerStyle}>
-       <Text style={styles.itemStyle}>UserId: {id}</Text>
-       <Text style={styles.itemStyle}>Name: {name}</Text>
-       <Text style={styles.itemStyle}>UserName: {username}</Text>
-       <Text style={styles.itemStyle}>Email: {email}</Text>
+    <View style={styles.container}>
+       <Text style={styles.textContainer}>UserId: {id}</Text>
+       <Text style={styles.textContainer}>Name: {name}</Text>
+       <Text style={styles.textContainer}>UserName: {username}</Text>
+       <Text style={styles.textContainer}>Email: {email}</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-containerStyle: {
+  container: {
     margin: 10,
     backgroundColor: 'green',
     padding: 10,
     alignItems: 'center',
     },
-    itemStyle: 
+    textContainer: 
     {
         fontSize: 25
     }, 
