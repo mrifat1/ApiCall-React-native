@@ -7,16 +7,16 @@ module.exports = {
         'import/resolver': {
             node: {
                 paths: ['src'],
-                alias: {
-                    '@app/features': './src/features',
-                    '@app/components': './src/components',
-                    '@app/navigator': './src/navigation',
-                    '@app/screens': './src/screens',
-                    '@app/styles': './src/styles',
-                    '@app/lib': './src/lib',
-                    '@app/config': './src/config',
-                    '@app/store': './src/store',
-                },
+                // alias: {
+                //     '@app/features': './src/features',
+                //     '@app/components': './src/components',
+                //     '@app/navigator': './src/navigation',
+                //     '@app/screens': './src/screens',
+                //     '@app/styles': './src/styles',
+                //     '@app/lib': './src/lib',
+                //     '@app/config': './src/config',
+                //     '@app/store': './src/store',
+                // },
             },
         },
     },
